@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Choosing the Right Herbal Blend - INFUSION.</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f5f1e6;
+            color: #2f3e2f;
+            line-height: 1.7;
+        }
+
+        header {
+    background-color: #526b4f;
+    color: white;
+    padding: 35px 25px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    margin-top: 0;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+nav h2 {
+    color: #e8f0dc;
+    margin-top: 35px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #d9e8c8;
+}
+        main {
+            max-width: 1100px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background-color: #fffdf7;
+            padding: 35px 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .hero h2 {
+            font-size: 34px;
+            color: #526b4f;
+            margin: 0 0 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #3a4a3a;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .main-image {
+            margin-bottom: 40px;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+        }
+
+        .content {
+            background-color: #fffdf7;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            margin-bottom: 35px;
+        }
+
+        .content h2 {
+            color: #526b4f;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #3a4a3a;
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #526b4f;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .blend-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .blend-card {
+            background-color: #fffdf7;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blend-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(60, 70, 50, 0.18);
+        }
+
+        .blend-card h3 {
+            color: #526b4f;
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .blend-card p {
+            color: #3a4a3a;
+            font-size: 15px;
+        }
+
+        .blend-label {
+            display: inline-block;
+            background-color: #e8eddf;
+            color: #526b4f;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .tips {
+            background-color: #e8eddf;
+            padding: 30px;
+            border-radius: 18px;
+            margin-bottom: 40px;
+        }
+
+        .tips h2 {
+            color: #526b4f;
+            font-size: 28px;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .tips ul {
+            max-width: 750px;
+            margin: auto;
+            padding-left: 25px;
+        }
+
+        .tips li {
+            margin-bottom: 12px;
+        }
+
+        .closing {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+        }
+
+        .closing h2 {
+            color: #526b4f;
+            font-size: 29px;
+        }
+
+        .closing p {
+            font-size: 17px;
+        }
+
+        .closing a {
+            display: inline-block;
+            background-color: #8aa47c;
+            color: white;
+            padding: 12px 28px;
+            margin: 10px 5px 0;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .closing a:hover {
+            background-color: #526b4f;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #3e513c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 800px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .blend-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .hero h2 {
+                font-size: 29px;
+            }
+
+            .main-image img {
+                height: 320px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            nav {
+                gap: 10px 14px;
+            }
+
+            .blend-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 22px;
+            }
+
+            .hero {
+                padding: 25px 18px;
+            }
+
+            .main-image img {
+                height: 230px;
+            }
+
+            .closing a {
+                margin: 8px 0;
+            }
+        }
+        footer .social {
+    margin-top: 12px;
+}
+
+footer .social a {
+    color: #e8f0dc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>INFUSION. Tea Rituals</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="brewing guides.html">Brewing Guides</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Choosing the Right Herbal Blend</h2>
+
+            <p>
+                Herbal teas offer a variety of flavours and
+                wellness traditions. Discover which blend suits
+                your mood, taste, and everyday lifestyle.
+            </p>
+        </section>
+
+        <section class="main-image">
+            <img
+                src="herbal-tea1.jpg"
+                alt="A selection of herbal teas with dried flowers, mint leaves, and a warm cup of tea"
+            >
+        </section>
+
+        <section class="content">
+            <h2>Discover Your Perfect Herbal Tea</h2>
+
+            <p>
+                Herbal teas are a wonderful way to explore natural
+                flavours and create a relaxing moment in your day.
+                Unlike traditional green and black teas, many
+                herbal infusions are made from flowers, leaves,
+                roots, fruits, and spices rather than the
+                Camellia sinensis tea plant.
+            </p>
+
+            <p>
+                From the gentle floral notes of chamomile to the
+                refreshing taste of peppermint, every herbal blend
+                has its own aroma, character, and brewing style.
+                Some are naturally caffeine-free, making them
+                popular choices for an evening drink.
+            </p>
+
+            <p>
+                Choosing the right blend depends on what you enjoy.
+                Think about the flavours you prefer, the time of
+                day you drink tea, and whether you want something
+                refreshing, warming, floral, or fruity.
+            </p>
+        </section>
+
+        <h2 class="section-title">Explore Herbal Blends</h2>
+
+        <section class="blend-grid">
+
+            <article class="blend-card">
+                <span class="blend-label">Calm Moments</span>
+
+                <h3>1. Chamomile Tea</h3>
+
+                <p>
+                    Chamomile has a gentle floral aroma and a
+                    mild, soothing flavour. It is a popular
+                    caffeine-free choice for a quiet evening
+                    or a peaceful bedtime routine.
+                </p>
+            </article>
+
+            <article class="blend-card">
+                <span class="blend-label">Fresh & Cooling</span>
+
+                <h3>2. Peppermint Tea</h3>
+
+                <p>
+                    Peppermint offers a crisp, cooling taste
+                    that feels refreshing after a meal or
+                    during an afternoon break. Its naturally
+                    minty aroma makes it easy to enjoy on
+                    its own.
+                </p>
+            </article>
+
+            <article class="blend-card">
+                <span class="blend-label">Floral & Fragrant</span>
+
+                <h3>3. Lavender Blend</h3>
+
+                <p>
+                    Lavender tea has a distinctive floral
+                    fragrance and delicate herbal flavour.
+                    It can be enjoyed as part of a relaxing
+                    ritual. Use culinary-grade lavender
+                    intended for consumption.
+                </p>
+            </article>
+
+            <article class="blend-card">
+                <span class="blend-label">Warm & Spicy</span>
+
+                <h3>4. Ginger Tea</h3>
+
+                <p>
+                    Ginger brings a warming, gently spicy
+                    flavour to your cup. It pairs beautifully
+                    with lemon and honey, making it a comforting
+                    option on chilly mornings or afternoons.
+                </p>
+            </article>
+
+            <article class="blend-card">
+                <span class="blend-label">Fruity & Bright</span>
+
+                <h3>5. Hibiscus Tea</h3>
+
+                <p>
+                    Hibiscus creates a vibrant red infusion
+                    with a pleasantly tart, fruity taste.
+                    Enjoy it hot or chilled, perhaps with a
+                    little fruit for extra flavour.
+                </p>
+            </article>
+
+            <article class="blend-card">
+                <span class="blend-label">Balanced Flavour</span>
+
+                <h3>6. Lemon & Lemongrass</h3>
+
+                <p>
+                    Lemongrass brings bright citrus notes
+                    and a light herbal aroma. Combine it
+                    with lemon peel or ginger for a fresh,
+                    fragrant blend suitable for any time
+                    of day.
+                </p>
+            </article>
+
+        </section>
+
+        <section class="tips">
+            <h2>How to Choose Your Herbal Blend</h2>
+
+            <ul>
+                <li>For a gentle floral flavour, try chamomile or lavender.</li>
+                <li>For a refreshing taste, choose peppermint or lemongrass.</li>
+                <li>For a warming, spicy cup, explore ginger-based blends.</li>
+                <li>For a fruity and tangy drink, try hibiscus or berry infusions.</li>
+                <li>Check the ingredients if you want a caffeine-free drink, as some blends contain green or black tea.</li>
+                <li>Choose products from reputable suppliers and check for possible allergies or interactions with medicines.</li>
+            </ul>
+        </section>
+
+        <section class="content">
+            <h2>Tips for Brewing the Perfect Cup</h2>
+
+            <p>
+                Start by checking the instructions on your herbal
+                tea packaging. As a general guide, use one
+                teaspoon of loose herbs or one tea bag per cup,
+                then add freshly boiled water.
+            </p>
+
+            <p>
+                Many herbal infusions benefit from a steeping
+                time of around five to seven minutes, although
+                the ideal time varies by ingredient and personal
+                taste. Cover your cup while steeping to help
+                preserve the aroma.
+            </p>
+
+            <p>
+                Experiment with combinations such as peppermint
+                and lemon, ginger and honey, or hibiscus and
+                berries. Start with small amounts of each
+                ingredient until you find a blend you love.
+            </p>
+
+            <p>
+                Remember that herbal teas are not a substitute
+                for medical treatment. Some herbs can interact
+                with medicines or may not be suitable during
+                pregnancy, so seek professional advice if you
+                have specific health concerns.
+            </p>
+        </section>
+
+        <section class="closing">
+            <h2>Find the Blend That Feels Right for You</h2>
+
+            <p>
+                Make every cup a little more personal.
+                Explore new aromas, discover your favourite
+                flavours, and create your own tea ritual with
+                INFUSION.
+            </p>
+
+            <a href="blog.html">Back to Blog</a>
+            <a href="shop.html">Explore Our Tea Collection</a>
+        </section>
+
+    </main>
+
+<footer>
+    <p>© 2026 INFUSION. All rights reserved.</p>
+
+    <div class="social">
+        <a href="https://www.instagram.com/infusion.1/" target="_blank">Instagram</a>
+        <a href="https://x.com/INFUSIONao" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/@infusion152" target="_blank">YouTube</a>
+    </div>
+</footer>
+
+
+</body>
+</html>

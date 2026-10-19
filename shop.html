@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop - INFUSION.</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: #f5f1e6;
+        color: #2f3e2f;
+        line-height: 1.7;
+    }
+
+    header {
+    background-color: #526b4f;
+    color: white;
+    padding: 35px 25px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    margin-top: 0;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+nav h2 {
+    color: #e8f0dc;
+    margin-top: 35px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #d9e8c8;
+}
+
+    nav a {
+        color: #e8f0dc;
+        text-decoration: none;
+        margin: 0 12px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #d9e8c8;
+    }
+
+    main {
+        max-width: 1100px;
+        margin: 50px auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .intro {
+        background-color: #fffdf7;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+        margin-bottom: 40px;
+    }
+
+    .intro h2 {
+        font-size: 32px;
+        color: #526b4f;
+        margin-bottom: 15px;
+    }
+
+    .intro p {
+        font-size: 18px;
+        color: #3a4a3a;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+        margin-top: 20px;
+    }
+
+    .product {
+        background-color: #fffdf7;
+        width: 260px;
+        padding: 20px;
+        border-radius: 18px;
+        box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .product:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 28px rgba(60, 70, 50, 0.18);
+    }
+
+    .product img {
+        width: 100%;
+        border-radius: 14px;
+        margin-bottom: 15px;
+    }
+
+    .product h3 {
+        font-size: 22px;
+        color: #526b4f;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        font-size: 16px;
+        color: #3a4a3a;
+        margin-bottom: 15px;
+    }
+
+    .view-product {
+        display: inline-block;
+        background-color: white;
+        color: #526b4f;
+        padding: 10px 25px;
+        border: 1px solid #526b4f;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .view-product:hover {
+        background-color: #526b4f;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    footer {
+        background-color: #3e513c;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+    footer .social {
+    margin-top: 12px;
+}
+
+footer .social a {
+    color: #e8f0dc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+</style>
+
+<body>
+
+    <header>
+        <h1>Shop INFUSION.</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="brewing guides.html">Brewing Guides</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Our Tea Collection</h2>
+            <p>Explore our range of premium teas crafted for balance, flavour, and everyday enjoyment.</p>
+        </section>
+
+        <section class="products">
+
+            <div class="product">
+                <img src="black-tea.jpg" alt="Black Tea">
+                <h3>Black Tea</h3>
+                <p>Bold, rich, and full-bodied. Perfect for mornings.</p>
+                <a class="view-product" href="Black Tea.html">View Product</a>
+            </div>
+
+            <div class="product">
+                <img src="green-tea.jpg" alt="Green Tea">
+                <h3>Green Tea</h3>
+                <p>Fresh, vibrant, and energising with natural antioxidants.</p>
+                <a class="view-product" href="Green Tea.html">View Product</a>
+            </div>
+
+            <div class="product">
+                <img src="herbal-tea.jpg" alt="Herbal Tea">
+                <h3>Herbal Tea</h3>
+                <p>Relaxing blends crafted for calm and comfort.</p>
+                <a class="view-product" href="Herbal Tea.html">View Product</a>
+            </div>
+
+            <div class="product">
+                <img src="white-tea.jpg" alt="White Tea">
+                <h3>White Tea</h3>
+                <p>Delicate, smooth, and naturally sweet.</p>
+                <a class="view-product" href="White Tea.html">View Product</a>
+            </div>
+
+            <div class="product">
+                <img src="oolong-tea.jpg" alt="Oolong Tea">
+                <h3>Oolong Tea</h3>
+                <p>Complex flavour with a perfect balance of green and black.</p>
+                <a class="view-product" href="Oolong Tea.html">View Product</a>
+            </div>
+
+        </section>
+
+    </main>
+
+<footer>
+    <p>© 2026 INFUSION. All rights reserved.</p>
+
+    <div class="social">
+        <a href="https://www.instagram.com/infusion.1/" target="_blank">Instagram</a>
+        <a href="https://x.com/INFUSIONao" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/@infusion152" target="_blank">YouTube</a>
+    </div>
+</footer>
+
+
+</body>
+</html>

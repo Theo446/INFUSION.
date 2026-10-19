@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head><title>INFUSION.</title></head>
+    <body>
+        <style>
+nav {
+    text-align: center;
+}
+.course {
+    text-align: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f1e6;
+    color: #2f3e2f;
+}
+header {
+    background-color: #526b4f;
+    color: white;
+    padding: 35px 25px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    margin-top: 0;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+nav h2 {
+    color: #e8f0dc;
+    margin-top: 35px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #d9e8c8;
+}
+main {
+    padding: 40px;
+    text-align: center;
+}
+.course {
+    text-align: center;
+    padding: 20px;
+}
+
+.course > img {
+    width: 100%;
+    max-width: 650px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(47, 62, 47, 0.12);
+}
+
+.course > p {
+    max-width: 650px;
+    margin: 25px auto 40px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #586653;
+}
+
+.course ul {
+    list-style: none;
+    padding: 0;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.course li {
+    background: #fffdf8;
+    padding: 15px 15px 22px;
+    border: 1px solid #e5e8dc;
+    border-radius: 22px;
+    box-shadow: 0 5px 15px rgba(47, 62, 47, 0.07);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.course li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(47, 62, 47, 0.14);
+    border-color: #a5b895;
+}
+
+.course li a {
+    order: 1;
+    display: inline-block;
+    background: #526b4f;
+    color: #fffdf8;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding: 12px 26px;
+    margin: 8px 0 18px;
+    border-radius: 30px;
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+}
+
+.course li a:hover {
+    background: #8aa47c;
+    transform: scale(1.04);
+}
+
+.course li img {
+    order: 2;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 0;
+    transition: transform 0.4s ease;
+}
+
+.course li:hover img {
+    transform: scale(1.04);
+}
+
+@media (max-width: 600px) {
+    .course ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .course li {
+        padding: 10px 10px 16px;
+        border-radius: 16px;
+    }
+
+    .course li img {
+        height: 145px;
+        border-radius: 11px;
+    }
+
+    .course li a {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .course > img {
+        height: 220px;
+    }
+}
+footer {
+    background-color: #3e513c;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+footer .social {
+    margin-top: 12px;
+}
+
+footer .social a {
+    color: #e8f0dc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+</style>
+</body>
+
+        <header>
+            <nav>
+                <h1>Welcome to INFUSION.</h1>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="shop.html">Shop</a>
+                <a href="blog.html">Blog</a>
+                <a href="brewing guides.html">Brewing Guides</a>
+                <h2>Explore our collections</h2>
+            </nav>
+        </header>
+        <main>
+            <div class="course">
+                <img src="tea.jpg.jpg" alt="Tea and infusions" width="500">
+                <p>Find your perfect balance with our collection of premium hot and cold teas, crafted to match every mood and season.</p>
+            <ul>
+                <li><a href="Black Tea.html">Black Tea</a>
+                <img src="black-tea.jpg" alt="Black Tea" width="200"></li>
+                <li><a href="Green Tea.html">Green Tea</a>
+                <img src="green-tea.jpg" alt="Green Tea" width="200"></li>
+                <li><a href="Herbal Tea.html">Herbal Tea</a>
+                <img src="herbal-tea.jpg" alt="Herbal Tea" width="200"></li>
+                <li><a href="White Tea.html">White Tea</a>
+                <img src="white-tea.jpg" alt="White Tea" width="200"></li>
+                <li><a href="Oolong Tea.html">Oolong Tea</a>
+                <img src="oolong-tea.jpg" alt="Oolong Tea" width="200"></li>
+            </ul>
+            </div>
+        </main>
+<footer>
+    <p>© 2026 INFUSION. All rights reserved.</p>
+
+    <div class="social">
+        <a href="https://www.instagram.com/infusion.1/" target="_blank">Instagram</a>
+        <a href="https://x.com/INFUSIONao" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/@infusion152" target="_blank">YouTube</a>
+    </div>
+</footer>
+    </body>
+</html>
+
+

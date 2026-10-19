@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Brewing Guides - INFUSION.</title>
+    <style>
+
+        body {
+            margin: 0;
+            background-color: #f5f1e6;
+            color: #2f3e2f;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #526b4f;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin: 0 0 10px;
+            letter-spacing: 2px;
+        }
+
+        header {
+    background-color: #526b4f;
+    color: white;
+    padding: 35px 25px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    margin-top: 0;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+nav h2 {
+    color: #e8f0dc;
+    margin-top: 35px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #d9e8c8;
+}
+
+        main {
+            max-width: 1150px;
+            margin: 45px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .intro {
+            background-color: #fffdf7;
+            padding: 35px 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+            color: #526b4f;
+            margin: 0 0 15px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #3a4a3a;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            color: #526b4f;
+            font-size: 29px;
+            margin-bottom: 10px;
+        }
+
+        .section-description {
+            margin: 0 auto 30px;
+            max-width: 700px;
+        }
+
+        .guides {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
+            margin-top: 25px;
+        }
+
+        .guide-card {
+            background-color: #fffdf7;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: left;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(60, 70, 50, 0.18);
+        }
+
+        .guide-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 14px;
+            margin-bottom: 15px;
+        }
+
+        .guide-card h3 {
+            font-size: 25px;
+            color: #526b4f;
+            margin: 0 0 10px;
+        }
+
+        .guide-card p {
+            font-size: 16px;
+            color: #3a4a3a;
+        }
+
+        .guide-card ul {
+            padding-left: 22px;
+        }
+
+        .guide-card li {
+            margin-bottom: 8px;
+        }
+
+        .guide-card strong {
+            color: #526b4f;
+        }
+
+        .tip {
+            background-color: #e8eddf;
+            border-left: 5px solid #8aa47c;
+            padding: 14px 16px;
+            margin-top: 18px;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .steps-section {
+            background-color: #fffdf7;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+        }
+
+        .steps-section h2 {
+            color: #526b4f;
+            font-size: 29px;
+            margin-top: 0;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .step {
+            background-color: #f5f1e6;
+            padding: 20px 15px;
+            border-radius: 14px;
+        }
+
+        .step-number {
+            background-color: #526b4f;
+            color: white;
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            border-radius: 50%;
+            margin: 0 auto 12px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .step h3 {
+            color: #526b4f;
+            margin: 8px 0;
+        }
+
+        .steps p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        .closing {
+            margin: 40px 0 20px;
+            padding: 25px;
+        }
+
+        .closing h2 {
+            color: #526b4f;
+            font-size: 29px;
+        }
+
+        .closing p {
+            font-size: 17px;
+        }
+
+        .closing a {
+            display: inline-block;
+            background-color: #8aa47c;
+            color: white;
+            padding: 12px 28px;
+            margin-top: 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .closing a:hover {
+            background-color: #526b4f;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #3e513c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 750px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .guides {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .intro h2 {
+                font-size: 27px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            nav {
+                gap: 10px 14px;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .guide-card {
+                padding: 18px;
+            }
+
+            .guide-card img {
+                height: 190px;
+            }
+        }
+        footer .social {
+    margin-top: 12px;
+}
+
+footer .social a {
+    color: #e8f0dc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>INFUSION. Brewing Guides</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="brewing guides.html" class="active">Brewing Guides</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Discover the Art of Brewing Tea</h2>
+
+            <p>
+                Every cup of tea tells a story. Learn how to choose the
+                right water temperature, steeping time and tea quantity
+                to create the perfect cup with INFUSION.
+            </p>
+        </section>
+
+        <h2 class="section-title">Explore Our Brewing Guides</h2>
+
+        <p class="section-description">
+            From delicate green teas to comforting herbal blends,
+            follow our simple guides to bring out the best flavour
+            in every infusion.
+        </p>
+
+        <section class="guides">
+
+            <article class="guide-card">
+                <img
+                    src="green-tea.jpg"
+                    alt="A fresh cup of green tea"
+                    loading="lazy"
+                >
+
+                <h3>1. Green Tea</h3>
+
+                <p>
+                    Light, fresh and delicate, green tea is best brewed
+                    gently to preserve its natural flavour without
+                    developing bitterness.
+                </p>
+
+                <ul>
+                    <li><strong>Water temperature:</strong> 70–80°C</li>
+                    <li><strong>Tea quantity:</strong> 1 teaspoon per cup</li>
+                    <li><strong>Steeping time:</strong> 2–3 minutes</li>
+                    <li><strong>Flavour:</strong> Fresh and grassy</li>
+                </ul>
+
+                <div class="tip">
+                    <strong>Brewing tip:</strong>
+                    Avoid boiling water. Slightly cooler water helps
+                    keep green tea smooth and refreshing.
+                </div>
+            </article>
+
+            <article class="guide-card">
+                <img
+                    src="black-tea.jpg"
+                    alt="A warm cup of black tea"
+                    loading="lazy"
+                >
+
+                <h3>2. Black Tea</h3>
+
+                <p>
+                    Bold, rich and full-bodied, black tea is a wonderful
+                    choice for a morning boost or a relaxing afternoon
+                    tea break.
+                </p>
+
+                <ul>
+                    <li><strong>Water temperature:</strong> 95–100°C</li>
+                    <li><strong>Tea quantity:</strong> 1 teaspoon per cup</li>
+                    <li><strong>Steeping time:</strong> 3–5 minutes</li>
+                    <li><strong>Flavour:</strong> Rich and robust</li>
+                </ul>
+
+                <div class="tip">
+                    <strong>Brewing tip:</strong>
+                    Add milk, lemon or honey if you enjoy a different
+                    flavour profile. Taste before adding anything.
+                </div>
+            </article>
+            <article class="guide-card">
+                <img
+                    src="white-tea.jpg"
+                    alt="A delicate cup of white tea"
+                    loading="lazy"
+                >
+
+                <h3>3. White Tea</h3>
+
+                <p>
+                    Delicate and subtly sweet, white tea deserves a
+                    gentle brewing method that allows its light,
+                    floral character to shine.
+                </p>
+
+                <ul>
+                    <li><strong>Water temperature:</strong> 75–85°C</li>
+                    <li><strong>Tea quantity:</strong> 1–2 teaspoons per cup</li>
+                    <li><strong>Steeping time:</strong> 3–5 minutes</li>
+                    <li><strong>Flavour:</strong> Soft and floral</li>
+                </ul>
+
+                <div class="tip">
+                    <strong>Brewing tip:</strong>
+                    Use fresh-tasting water and allow the tea to steep
+                    patiently for a gentle, aromatic cup.
+                </div>
+            </article>
+
+            <article class="guide-card">
+                <img
+                    src="herbal-tea.jpg"
+                    alt="A soothing herbal tea infusion"
+                    loading="lazy"
+                >
+
+                <h3>4. Herbal Tea</h3>
+
+                <p>
+                    Enjoy the comforting aromas of ingredients such as
+                    peppermint, chamomile, ginger and dried fruit.
+                    Herbal infusions are naturally varied in flavour.
+                </p>
+
+                <ul>
+                    <li><strong>Water temperature:</strong> 95–100°C</li>
+                    <li><strong>Tea quantity:</strong> Follow package directions</li>
+                    <li><strong>Steeping time:</strong> 5–7 minutes</li>
+                    <li><strong>Flavour:</strong> Floral, fruity or refreshing</li>
+                </ul>
+
+                <div class="tip">
+                    <strong>Brewing tip:</strong>
+                    Cover your cup while steeping to help retain the
+                    infusion's delicate aromas. Follow the blend's
+                    packaging for the best results.
+                </div>
+            </article>
+            <article class="guide-card">
+                <img
+                    src="oolong-tea.jpg"
+                    alt="A fragrant cup of oolong tea"
+                    loading="lazy"
+                >
+            
+                <h3>5. Oolong Tea</h3>
+            
+                <p>
+                    Smooth, aromatic and beautifully balanced, oolong tea
+                    sits between green and black tea. Its flavour can range
+                    from light and floral to rich and toasty, depending on
+                    how the leaves are processed.
+                </p>
+            
+                <ul>
+                    <li><strong>Water temperature:</strong> 85–95°C</li>
+                    <li><strong>Tea quantity:</strong> 1–2 teaspoons per cup</li>
+                    <li><strong>Steeping time:</strong> 3–5 minutes</li>
+                    <li><strong>Flavour:</strong> Floral, fruity or toasty</li>
+                </ul>
+            
+                <div class="tip">
+                    <strong>Brewing tip:</strong>
+                    Experiment with different steeping times to discover
+                    your preferred flavour. Oolong tea leaves can often
+                    be steeped multiple times, revealing new aromas
+                    with each infusion.
+                </div>
+            </article>
+        </section>
+
+        <section class="steps-section">
+            <h2>Your Perfect Cup in Four Steps</h2>
+
+            <p>
+                Great tea starts with a few simple habits.
+                Follow these steps every time you brew.
+            </p>
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Tea</h3>
+                    <p>
+                        Select your favourite loose-leaf tea or tea bag
+                        and measure the recommended quantity.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Heat the Water</h3>
+                    <p>
+                        Use fresh water and select a temperature suited
+                        to your chosen tea.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Steep with Care</h3>
+                    <p>
+                        Set a timer and allow your tea to infuse for
+                        the recommended amount of time.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Sip and Enjoy</h3>
+                    <p>
+                        Remove the tea leaves or bag, let your tea cool
+                        slightly and savour every sip.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="closing">
+            <h2>Make Every Cup a Ritual</h2>
+
+            <p>
+                Slow down, enjoy the aroma and discover your next
+                favourite blend with INFUSION.
+            </p>
+
+            <a href="shop.html">Explore Our Tea Collection</a>
+        </section>
+
+    </main>
+
+<footer>
+    <p>© 2026 INFUSION. All rights reserved.</p>
+
+    <div class="social">
+        <a href="https://www.instagram.com/infusion.1/" target="_blank">Instagram</a>
+        <a href="https://x.com/INFUSIONao" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/@infusion152" target="_blank">YouTube</a>
+    </div>
+</footer>
+
+</body>
+</html>

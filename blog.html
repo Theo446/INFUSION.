@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog - INFUSION.</title>
+</head>
+<body>
+<style>
+    body {
+        margin: 0;
+        background-color: #f5f1e6;
+        color: #2f3e2f;
+        line-height: 1.7;
+    }
+
+    header {
+    background-color: #526b4f;
+    color: white;
+    padding: 35px 25px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    margin-top: 0;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+nav h2 {
+    color: #e8f0dc;
+    margin-top: 35px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #d9e8c8;
+}
+
+    main {
+        max-width: 1100px;
+        margin: 50px auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .intro {
+        background-color: #fffdf7;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+        margin-bottom: 40px;
+    }
+
+    .intro h2 {
+        font-size: 32px;
+        color: #526b4f;
+        margin-bottom: 15px;
+    }
+
+    .intro p {
+        font-size: 18px;
+        color: #3a4a3a;
+    }
+
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+        margin-top: 20px;
+    }
+
+    .post {
+        background-color: #fffdf7;
+        width: 300px;
+        padding: 20px;
+        border-radius: 18px;
+        box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .post:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 28px rgba(60, 70, 50, 0.18);
+    }
+
+    .post img {
+        width: 100%;
+        border-radius: 14px;
+        margin-bottom: 15px;
+    }
+
+    .post h3 {
+        font-size: 22px;
+        color: #526b4f;
+        margin-bottom: 10px;
+    }
+
+    .post p {
+        font-size: 16px;
+        color: #3a4a3a;
+        margin-bottom: 15px;
+    }
+
+    .post button {
+    background-color: #8aa47c;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.post button:hover {
+    background-color: #526b4f;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.post button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    footer {
+        background-color: #3e513c;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    footer .social {
+    margin-top: 12px;
+}
+
+footer .social a {
+    color: #e8f0dc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+</style>
+
+
+    <header>
+        <h1>INFUSION. Blog</h1>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="about.html">About Us</a> 
+            <a href="contact.html">Contact Us</a> 
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="brewing guides.html">Brewing Guides</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Latest Tea Stories & Insights</h2>
+            <p>Discover brewing tips, tea culture, wellness guides, and behind‑the‑scenes stories from INFUSION.</p>
+        </section>
+
+        <section class="posts">
+
+            <div class="post">
+                <img src="tea.jpg.jpg" alt="Tea Culture">
+                <h3>The Art of Tea Rituals</h3>
+                <p>Tea rituals have been part of cultures around the world for centuries. Learn how simple moments can bring balance and calm to your day.</p>
+                <button><a href="Tea Ritruals.html">Read More</a></button>
+            </div>
+
+            <div class="post">
+                <img src="green-tea.jpg" alt="Green Tea Benefits">
+                <h3>5 Benefits of Green Tea</h3>
+                <p>Green tea is known for its refreshing flavour and natural antioxidants. Here are five reasons to enjoy a cup every day.</p>
+                <button><a href="5 Benefits.html">View More</a></button>
+            </div>
+
+            <div class="post">
+                <img src="herbal-tea.jpg" alt="Herbal Infusions">
+                <h3>Choosing the Right Herbal Blend</h3>
+                <p>Herbal teas offer a variety of flavours and wellness benefits. Find out which blend suits your mood and lifestyle.</p>
+                <button><a href="Herbal Blend.html">View More</a></button>
+            </div>
+
+        </section>
+
+    </main>
+
+<footer>
+    <p>© 2026 INFUSION. All rights reserved.</p>
+
+    <div class="social">
+        <a href="https://www.instagram.com/infusion.1/" target="_blank">Instagram</a>
+        <a href="https://x.com/INFUSIONao" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/@infusion152" target="_blank">YouTube</a>
+    </div>
+</footer>
+
+
+</body>
+</html>

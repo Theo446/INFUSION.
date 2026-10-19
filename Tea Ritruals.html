@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Art of Tea Rituals - INFUSION.</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f5f1e6;
+            color: #2f3e2f;
+            line-height: 1.7;
+        }
+
+        header {
+    background-color: #526b4f;
+    color: white;
+    padding: 35px 25px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    margin-top: 0;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+nav h2 {
+    color: #e8f0dc;
+    margin-top: 35px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #d9e8c8;
+}
+
+        main {
+            max-width: 1100px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background-color: #fffdf7;
+            padding: 35px 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .hero h2 {
+            font-size: 34px;
+            color: #526b4f;
+            margin: 0 0 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #3a4a3a;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .main-image {
+            margin-bottom: 40px;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+        }
+
+        .content {
+            background-color: #fffdf7;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            margin-bottom: 35px;
+        }
+
+        .content h2 {
+            color: #526b4f;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #3a4a3a;
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #526b4f;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .ritual-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .ritual-card {
+            background-color: #fffdf7;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .ritual-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(60, 70, 50, 0.18);
+        }
+
+        .ritual-card h3 {
+            color: #526b4f;
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .ritual-card p {
+            color: #3a4a3a;
+            font-size: 15px;
+        }
+
+        .benefits {
+            background-color: #e8eddf;
+            padding: 30px;
+            border-radius: 18px;
+            margin-bottom: 40px;
+        }
+
+        .benefits h2 {
+            color: #526b4f;
+            font-size: 28px;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .benefits ul {
+            max-width: 750px;
+            margin: auto;
+            padding-left: 25px;
+        }
+
+        .benefits li {
+            margin-bottom: 12px;
+        }
+
+        .closing {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+        }
+
+        .closing h2 {
+            color: #526b4f;
+            font-size: 29px;
+        }
+
+        .closing p {
+            font-size: 17px;
+        }
+
+        .closing a {
+            display: inline-block;
+            background-color: #8aa47c;
+            color: white;
+            padding: 12px 28px;
+            margin-top: 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .closing a:hover {
+            background-color: #526b4f;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #3e513c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 800px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .ritual-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .hero h2 {
+                font-size: 29px;
+            }
+
+            .main-image img {
+                height: 320px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            nav {
+                gap: 10px 14px;
+            }
+
+            .ritual-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 22px;
+            }
+
+            .hero {
+                padding: 25px 18px;
+            }
+
+            .main-image img {
+                height: 230px;
+            }
+        }
+        footer .social {
+    margin-top: 12px;
+}
+
+footer .social a {
+    color: #e8f0dc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>INFUSION. Tea Rituals</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="brewing guides.html">Brewing Guides</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>The Art of Tea Rituals</h2>
+
+            <p>
+                Tea rituals have been part of cultures around the world for centuries. Learn how simple moments can bring balance and calm to your day.
+            </p>
+        </section>
+
+        <section class="main-image">
+            <img src="tea-ritual.jpg" alt="A peaceful tea ritual with a freshly brewed cup of tea">
+        </section>
+
+        <section class="content">
+            <h2>Finding Meaning in Every Cup</h2>
+
+            <p>
+                Tea is more than a drink. For many people, it is a moment to slow down, reconnect with themselves, and appreciate the present. From preparing the leaves to enjoying the first sip, every step can become a meaningful part of the day.
+            </p>
+
+            <p>
+                Across the world, tea has inspired traditions that celebrate hospitality, mindfulness, friendship, and reflection. Japanese tea ceremonies focus on mindfulness and careful preparation, while British afternoon tea brings people together through conversation and shared treats.
+            </p>
+
+            <p>
+                You do not need a special setting or expensive
+                equipment to create your own tea ritual. A favourite
+                cup, fresh water, and a few quiet minutes can be
+                enough to make an ordinary moment feel special.
+            </p>
+        </section>
+
+        <h2 class="section-title">Simple Tea Rituals to Try</h2>
+
+        <section class="ritual-grid">
+
+            <article class="ritual-card">
+                <h3>1. Morning Mindfulness</h3>
+
+                <p>
+                    Begin your day by preparing your favourite tea without rushing. Notice the warmth of the cup, the aroma of the leaves, and the flavour of each sip before starting your daily tasks.
+                </p>
+            </article>
+
+            <article class="ritual-card">
+                <h3>2. Afternoon Pause</h3>
+
+                <p>
+                    Take a short break during a busy afternoon. Put away distractions, make a fresh cup of tea, and give yourself a few minutes to rest and gather your thoughts.
+                </p>
+            </article>
+
+            <article class="ritual-card">
+                <h3>3. Evening Relaxation</h3>
+
+                <p>
+                    Create a calming evening routine with a caffeine-free herbal infusion, such as chamomile or peppermint. Enjoy your drink in a comfortable, peaceful setting.
+                </p>
+            </article>
+
+            <article class="ritual-card">
+                <h3>4. Sharing Tea</h3>
+
+                <p>
+                    Invite a friend or family member to share a pot of tea. Use the time to talk, listen, and enjoy each other's company without distractions.
+                </p>
+            </article>
+
+            <article class="ritual-card">
+                <h3>5. Explore New Flavours</h3>
+
+                <p>
+                    Try a different tea variety each week. Explore green, black, white, oolong, and herbal infusions to discover new aromas and flavours.
+                </p>
+            </article>
+
+            <article class="ritual-card">
+                <h3>6. Appreciate the Process</h3>
+
+                <p>
+                    Pay attention to the small details, from heating the water to watching the leaves unfurl. Let the brewing process remind you to enjoy life's quieter moments.
+                </p>
+            </article>
+
+        </section>
+
+        <section class="benefits">
+            <h2>Why Create a Tea Ritual?</h2>
+
+            <ul>
+                <li>Encourages you to take regular breaks during the day.</li>
+                <li>Creates an opportunity to practise mindfulness.</li>
+                <li>Provides a simple way to connect with friends and family.</li>
+                <li>Encourages you to explore different tea cultures and traditions.</li>
+                <li>Turns an everyday drink into a personal moment of enjoyment.</li>
+            </ul>
+        </section>
+
+        <section class="content">
+            <h2>Create Your Own Tea Tradition</h2>
+
+            <p>
+                The beauty of a tea ritual is that it can be personal. You might enjoy a quiet cup before work, prepare a pot for friends on the weekend, or end the day with a soothing herbal infusion.
+            </p>
+
+            <p>
+                There is no single right way to enjoy tea. Choose the flavours you love, take your time with the preparation, and make space for moments that help you feel refreshed.
+            </p>
+        </section>
+
+        <section class="closing">
+            <h2>Make Every Cup a Moment to Remember</h2>
+
+            <p>
+                Discover your favourite teas and bring a little more intention to your everyday routine with INFUSION.
+            </p>
+
+            <a href="blog.html">Back to Blog</a>
+            <a href="shop.html">Explore Our Tea Collection</a>
+        </section>
+
+    </main>
+
+<footer>
+    <p>© 2026 INFUSION. All rights reserved.</p>
+
+    <div class="social">
+        <a href="https://www.instagram.com/infusion.1/" target="_blank">Instagram</a>
+        <a href="https://x.com/INFUSIONao" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/@infusion152" target="_blank">YouTube</a>
+    </div>
+</footer>
+
+
+</body>
+</html>

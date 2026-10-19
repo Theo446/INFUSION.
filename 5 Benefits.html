@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>5 Benefits of Green Tea - INFUSION.</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f5f1e6;
+            color: #2f3e2f;
+            line-height: 1.7;
+        }
+
+        header {
+    background-color: #526b4f;
+    color: white;
+    padding: 35px 25px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    margin-top: 0;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+nav h2 {
+    color: #e8f0dc;
+    margin-top: 35px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #d9e8c8;
+}
+        main {
+            max-width: 1100px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background-color: #fffdf7;
+            padding: 35px 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .hero h2 {
+            font-size: 34px;
+            color: #526b4f;
+            margin: 0 0 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #3a4a3a;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .main-image {
+            margin-bottom: 40px;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+        }
+
+        .content {
+            background-color: #fffdf7;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            margin-bottom: 35px;
+        }
+
+        .content h2 {
+            color: #526b4f;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #3a4a3a;
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #526b4f;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .benefit-card {
+            background-color: #fffdf7;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(60, 70, 50, 0.12);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(60, 70, 50, 0.18);
+        }
+
+        .benefit-card h3 {
+            color: #526b4f;
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .benefit-card p {
+            color: #3a4a3a;
+            font-size: 15px;
+        }
+
+        .benefit-number {
+            display: inline-block;
+            background-color: #e8eddf;
+            color: #526b4f;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .benefits {
+            background-color: #e8eddf;
+            padding: 30px;
+            border-radius: 18px;
+            margin-bottom: 40px;
+        }
+
+        .benefits h2 {
+            color: #526b4f;
+            font-size: 28px;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .benefits ul {
+            max-width: 750px;
+            margin: auto;
+            padding-left: 25px;
+        }
+
+        .benefits li {
+            margin-bottom: 12px;
+        }
+
+        .closing {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+        }
+
+        .closing h2 {
+            color: #526b4f;
+            font-size: 29px;
+        }
+
+        .closing p {
+            font-size: 17px;
+        }
+
+        .closing a {
+            display: inline-block;
+            background-color: #8aa47c;
+            color: white;
+            padding: 12px 28px;
+            margin: 10px 5px 0;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .closing a:hover {
+            background-color: #526b4f;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #3e513c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 800px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .benefit-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .hero h2 {
+                font-size: 29px;
+            }
+
+            .main-image img {
+                height: 320px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            nav {
+                gap: 10px 14px;
+            }
+
+            .benefit-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 22px;
+            }
+
+            .hero {
+                padding: 25px 18px;
+            }
+
+            .main-image img {
+                height: 230px;
+            }
+
+            .closing a {
+                margin: 8px 0;
+            }
+        }
+        footer .social {
+    margin-top: 12px;
+}
+
+footer .social a {
+    color: #e8f0dc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>INFUSION. Tea Rituals</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="brewing guides.html">Brewing Guides</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>5 Benefits of Green Tea</h2>
+
+            <p>
+                Green tea is known for its refreshing flavour and
+                natural antioxidants. Discover five reasons to
+                make this soothing drink part of your daily routine.
+            </p>
+        </section>
+
+        <section class="main-image">
+            <img
+                src="glass-green-tea.jpg"
+                alt="A freshly brewed cup of green tea with green tea leaves"
+            >
+        </section>
+
+        <section class="content">
+            <h2>Discover the Goodness of Green Tea</h2>
+
+            <p>
+                Green tea has been enjoyed for centuries for its
+                delicate flavour, comforting warmth, and natural
+                plant compounds. Made from the leaves of the
+                Camellia sinensis plant, it is a popular choice
+                for people looking to enjoy a refreshing drink.
+            </p>
+
+            <p>
+                Green tea contains antioxidants called catechins,
+                including EGCG, which have been studied for their
+                potential health benefits. It also contains
+                caffeine, so its effects can vary from person to
+                person.
+            </p>
+
+            <p>
+                From supporting alertness to offering a pleasant
+                alternative to sugary drinks, green tea can be
+                a simple addition to a balanced lifestyle.
+                Let's explore five possible benefits.
+            </p>
+        </section>
+
+        <h2 class="section-title">5 Reasons to Enjoy Green Tea</h2>
+
+        <section class="benefit-grid">
+
+            <article class="benefit-card">
+                <span class="benefit-number">1</span>
+                <h3>Rich in Antioxidants</h3>
+
+                <p>
+                    Green tea contains catechins and other
+                    antioxidant compounds that help protect
+                    cells from oxidative stress. These compounds
+                    are one reason green tea is widely studied
+                    for its potential role in overall health.
+                </p>
+            </article>
+
+            <article class="benefit-card">
+                <span class="benefit-number">2</span>
+                <h3>Supports Heart Health</h3>
+
+                <p>
+                    Research suggests that drinking green tea
+                    may be associated with modest improvements
+                    in some cardiovascular risk factors,
+                    including cholesterol levels. It works
+                    best alongside a balanced diet and an
+                    active lifestyle.
+                </p>
+            </article>
+
+            <article class="benefit-card">
+                <span class="benefit-number">3</span>
+                <h3>Helps You Stay Alert</h3>
+
+                <p>
+                    Green tea contains caffeine, which can help
+                    improve alertness and concentration.
+                    It also contains L-theanine, an amino acid
+                    studied for its effects on attention and
+                    relaxation.
+                </p>
+            </article>
+
+            <article class="benefit-card">
+                <span class="benefit-number">4</span>
+                <h3>May Support Weight Management</h3>
+
+                <p>
+                    Green tea's caffeine and catechins may have
+                    a small effect on energy expenditure.
+                    However, green tea is not a magic solution
+                    for weight loss and should be enjoyed as
+                    part of healthy everyday habits.
+                </p>
+            </article>
+
+            <article class="benefit-card">
+                <span class="benefit-number">5</span>
+                <h3>A Refreshing Way to Hydrate</h3>
+
+                <p>
+                    A cup of green tea contributes to your
+                    daily fluid intake. Its light, refreshing
+                    flavour makes it a pleasant alternative
+                    to sugary drinks. Choose it plain or add
+                    a slice of lemon if you prefer.
+                </p>
+            </article>
+
+        </section>
+
+        <section class="benefits">
+            <h2>Quick Tips for Enjoying Green Tea</h2>
+
+            <ol>
+                <li>Use fresh water and avoid boiling water directly on delicate tea leaves.</li>
+                <li>Steep for around 2–3 minutes, adjusting to your taste and tea variety.</li>
+                <li>Enjoy it plain or add lemon for a fresh flavour.</li>
+                <li>Remember that green tea contains caffeine, so consider avoiding it close to bedtime if it affects your sleep.</li>
+                <li>Choose a balanced diet and healthy habits rather than relying on tea for specific health outcomes.</li>
+            </ol>
+        </section>
+
+        <section class="content">
+            <h2>How to Make the Perfect Cup</h2>
+
+            <p>
+                Start with one teaspoon of green tea leaves or
+                one tea bag in a cup. Pour in hot water that has
+                cooled slightly after boiling, then steep for
+                two to three minutes.
+            </p>
+
+            <p>
+                Remove the leaves or tea bag and let the tea cool
+                to a comfortable temperature. You can enjoy it
+                warm on a quiet morning or serve it chilled on a
+                sunny afternoon.
+            </p>
+
+            <p>
+                Green tea is generally safe for most adults in
+                moderate amounts. However, it can interact with
+                certain medicines, and concentrated green tea
+                extracts may cause side effects. If you have
+                health concerns or take medication, ask a
+                healthcare professional for advice.
+            </p>
+        </section>
+
+        <section class="closing">
+            <h2>Make Every Cup a Healthier Habit</h2>
+
+            <p>
+                Discover the simple pleasure of green tea and
+                find your favourite way to enjoy every cup
+                with INFUSION.
+            </p>
+
+            <a href="blog.html">Back to Blog</a>
+            <a href="shop.html">Explore Our Tea Collection</a>
+        </section>
+
+    </main>
+
+<footer>
+    <p>© 2026 INFUSION. All rights reserved.</p>
+
+    <div class="social">
+        <a href="https://www.instagram.com/infusion.1/" target="_blank">Instagram</a>
+        <a href="https://x.com/INFUSIONao" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/@infusion152" target="_blank">YouTube</a>
+    </div>
+</footer>
+
+
+</body>
+</html>

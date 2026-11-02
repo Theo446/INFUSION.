@@ -36,8 +36,17 @@ nav h2 {
     margin-top: 35px;
     font-size: 32px;
     letter-spacing: 1px;
+    animation: blink 1s infinite;
 }
 
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
 nav a {
     color: white;
     text-decoration: none;
